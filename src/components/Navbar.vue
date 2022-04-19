@@ -1,15 +1,19 @@
 <template>
   <div class="navbar">
-    <div @click="$router.push('/')">Vue 3</div>
+    <div @click="$router.push('/')" >Vue 3</div>
     <div class="navbar__btns">
       <my-button style="margin-left: 20px"  @click="$router.push('/posts')">Posts</my-button>
       <my-button style="margin-left: 20px" @click="$router.push('/about')">About Us</my-button>
+      <my-button style="margin-left: 20px" @click="$router.push('/store')">Store</my-button>
+      <my-button style="margin-left: 20px" @click="$router.push('/composition')">Composition</my-button>
     </div>
   </div>
 </template>
 
 <script>
+import MyButton from "@/components/UI/MyButton";
 export default {
+  components: {MyButton}
 }
 </script>
 
